@@ -1,26 +1,18 @@
 
-import './App.scss'
-import { PostNavBanner } from './components/postNavBanner/PostNavBanner.jsx'
+import './App.scss';
+import { PreNavBanner } from './components/preBanner/PreNavBanner.jsx';
+import { Header } from './components/header/Header.jsx';
+import { Banner } from './components/banner/Banner.jsx';
+import { PostNavBanner } from './components/postNavBanner/PostNavBanner.jsx';
 
 
 const App = () => {
   return (
     <>
-      <PostNavBanner></PostNavBanner>
+      <PreNavBanner></PreNavBanner>
       <Header></Header>
       <Banner></Banner>
       <PostNavBanner></PostNavBanner>
-      <NavCategories></NavCategories>
-      <PreviewCategories></PreviewCategories>
-      <NavBestsellers></NavBestsellers>
-      <PreviewBestsellers></PreviewBestsellers>
-      <NavHottestPlants></NavHottestPlants>
-      <PreviewHottestPlants></PreviewHottestPlants>
-      <NavFerntasticDeals></NavFerntasticDeals>
-      <PreviewFerntasticDeals></PreviewFerntasticDeals>
-      <Testimonials></Testimonials>
-      <Footer></Footer>
-      <PostFooterBanner></PostFooterBanner>
     </>
   );
 }

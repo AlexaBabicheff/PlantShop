@@ -1,5 +1,5 @@
 import React from "react";
-import './Header.module.css';
+import classes from './Header.module.css';
 import '../../App.scss';
 import searchBar from '../../images/Search.svg'
 import inLiner from '../../images/Line 21.svg'
@@ -10,12 +10,12 @@ export const Header = ()  => {
     return(
     <div className={classes.header}>
         <div className={classes.logo}><img src={logo} alt="Logo-picture" /></div>
-        <div className={className.navigation}>
+        <div className={classes.navigation}>
             <ul className={classes.navigation__list}>
-                <li className={classes.navigation__item}> <a href="/" className="navigation__link">Home</a></li>
-                <li className={classes.navigation__item}><a href="/products" className="navigation__link">Products</a></li>
-                <li className={classes.navigation__item}><a href="/aboutUs" className="navigation__link">About us</a></li>
-                <li className={classes.navigation__item}><a href="/contactUs" className="navigation__link">Contact</a></li></ul>
+                <li className={classes.navigation__item}> <a href="/" className={classes.navigation__link}>Home</a></li>
+                <li className={classes.navigation__item}><a href="/products" className={classes.navigation__link}>Products</a></li>
+                <li className={classes.navigation__item}><a href="/aboutUs" className={classes.navigation__link}>About us</a></li>
+                <li className={classes.navigation__item}><a href="/contactUs" className={classes.navigation__link}>Contact</a></li></ul>
         </div>
         <div className={classes.searchBar}>
                 <div className={classes.searchBar}>
@@ -27,8 +27,7 @@ export const Header = ()  => {
                     <img src={bagIcon} alt="cart" />
                     <span className={classes.itemCount}>{itemCount}</span>    
                 </div>
-        </div>
+        </div>    
     </div>
-
     )
 }
